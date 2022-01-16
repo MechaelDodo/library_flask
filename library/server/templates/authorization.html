@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>authorization</title>
+</head>
+<body>
+  {% if message %}
+    <p>{{ message }}</p>
+  {% endif %}
+
+
+  <form method="post">
+    <p>
+      <label>username:</label>
+      <input type="text" name="username">
+    </p>
+    <p>
+      <label>password:</label>
+      <input type="password" name="password">
+    </p>
+    <p>
+      <input type="submit">
+    </p>
+  </form>
+
+
+</body>
+</html>
