@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>books_and_authors</title>
+</head>
+<body>
+
+<script src="js/script.js"></script>
+
+<!--<form>
+    <p>
+        <h1>Список книг</h1>
+    </p>
+    <select>
+        <option>Гарри Поттер</option>
+        <option>Мастер и Маргарита</option>
+        <option>Мертвые души</option>
+    </select>
+</form>-->
+
+<form>
+    {{ form.csrf_token() }}
+    <p>
+        {{ form.books_list.label }}
+        {{ form.books_list }}
+    </p>
+    <p>
+        {{ form.authors_list.label }}
+        {{ form.authors_list }}
+    </p>
+</form>
+
+
+
+</body>
+</html>
