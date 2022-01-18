@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Aurhor</title>
+</head>
+<body>
+
+<form>
+    {{ form.csrf_token() }}
+    <p>
+        <!--{{ form.author_name.label }}-->
+        {{ form.author_name.description }}
+    </p>
+    <p>
+        {{ form.biography.label }}
+        {{ form.biography.description }}
+    </p>
+    {{ form.submit }}
+</form>
+
+</body>
+</html>
